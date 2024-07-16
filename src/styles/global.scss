@@ -1,0 +1,30 @@
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-coulmn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.flex-small {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.flex-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
