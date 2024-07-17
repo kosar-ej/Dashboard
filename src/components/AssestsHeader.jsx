@@ -5,16 +5,16 @@ const AssestsHeader = () => {
   return (
     <div className="assest-header">
       <Row>
-        <Col span={2}>
+        <Col md={2} xs={4} >
           <span>Grade</span>
         </Col>
-        <Col span={12}>
+        <Col md={12} xs={4}>
           <span>Name</span>
         </Col>
-        <Col span={6}>
+        <Col md={6} xs={10}>
           <span>Total Vulnerabilities</span>
         </Col>
-        <Col span={4}>
+        <Col md={4} xs={6}>
           <span>Last Seen</span>
         </Col>
       </Row>

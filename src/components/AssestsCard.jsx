@@ -1,25 +1,33 @@
 import React from "react";
 import { Col, Row } from "antd";
 
-const AssestsCard = () => {
+const AssestsCard = ({assest}) => {
   return (
     <div className="assest-card">
       <Row>
         <Col span={2}>
           <div class="hexagon">
             <div class="hexagon-inner">
-              <div class="hexagon-letter">D</div>
+              <div class="hexagon-letter">
+                {assest.grade}
+              </div>
             </div>
           </div>
         </Col>
         <Col span={12}>
-          <span>Cloud A</span>
+          <span>
+            {assest.name}
+          </span>
         </Col>
         <Col span={6}>
-          <span>54</span>
+          <span>
+            {assest.total_vuls}
+          </span>
         </Col>
         <Col span={4}>
-          <span>2023</span>
+          <span>
+            {assest.lastSeen}
+          </span>
         </Col>
       </Row>
     </div>

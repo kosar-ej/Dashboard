@@ -4,29 +4,47 @@
     background-color: $secondary;
 }
 
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 .card {
     width: 350px;
     height: 250px;
     background-color: $lighter_secondary;
     border-radius: 10px;
     padding: 15px;
+    cursor: pointer;
 
-    &-baner{
+    @media only screen and (max-width: 600px) {
+        width: 300px;
+        height: 250px;
+    }
+
+    &-baner {
         width: 45px;
-        height : 50px;
+        height: 50px;
         border-radius: 6px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
-        img{
+        img {
             width: 28px;
             height: 28px;
             object-fit: contain;
         }
 
-        &-num-container{
+        &-num-container {
             background-color: $white_color;
             width: 100%;
             border-radius: 0px 0px 6px 6px;
@@ -35,7 +53,7 @@
             justify-content: center;
             align-items: center;
 
-            span{
+            span {
                 font-size: 12px;
                 font-weight: 400;
             }
@@ -82,37 +100,43 @@
     }
 }
 
-.assest-container{
+.assest-container {
     background-color: $purple_background;
     padding: 15px;
     border-radius: 6px;
 
-    &-title{
+    &-title {
         font-size: 14px;
         font-weight: 400;
         color: $white_color;
     }
 }
 
-.assest-header{
+.assest-header {
     background-color: $default;
     padding: 5px;
     border-radius: 3px;
 
-    span{
+    span {
         font-size: 14px;
         font-weight: 400;
         color: $white_color;
     }
 }
 
-.assest-card{
+.assest-card {
     background-color: $purple_light;
     padding: 8px;
     border-radius: 3px;
     margin-top: 10px;
 
-    span{
+    @media only screen and (max-width: 600px) {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-x: scroll;
+    }
+
+    span {
         font-size: 14px;
         font-weight: 400;
         color: $white_color;
